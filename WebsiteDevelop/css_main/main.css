@@ -8,7 +8,6 @@
 }
 /*導航列*/
 .header .nav{
-    background-color: purple;
     overflow: auto;
 }
 .header .nav a{
@@ -17,8 +16,9 @@
     font-size: 14px;
     padding: 10px;
     float: left;
+
 }
 /*mouse on nav*/
 .header .nav a:hover{
-    background-color: #96924c;
+    background-color: #670696;
 }
