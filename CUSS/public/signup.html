@@ -8,7 +8,7 @@
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="public/stylesheets/style.css">
-    <script src="js/js.js"></script>
+    <script src="js/login.js"></script>
     <title>CUSS</title>
 </head>
 <body>
@@ -26,16 +26,23 @@
     <div class="Login-System">
         <p>Welcome to Cuhk_stockMachine! <br>Please login here</p>
         <h1></h1>
-        <div class="Login-form">
-            <form>
-                <input type="text" name="sid"  id= "username"placeholder="Enter your student ID" required="" maxlength="10" minlength="10"><br>
-                <input type="password" name="password" id="password" placeholder="Enter your password" required=""><br><br>
-                <input type="submit" onclick="getInfo()"value="submit"/>
-                <p> <a href="login/reset">forget your password?</a> </p>
-                <p>If you haven't got our account<br>please click <a href="signup.html">here</a></p>
+        <form>
+            <fieldset>
+                <legend>Account information</legend>
+                <p><input type="number" name="sid"  placeholder="Enter your student ID" required="" maxlength="10" minlength="10"></p>
+                <p><input type="text" name="username" id= "username" placeholder="Enter your username" required=""></p>
+                <p><input type="number"placeholder="Enter invite Code" required=""/></p>
+                <p><input type="radio" name="sex" /> 男</p>
+                <p><input type="radio" name="sex" /> 女</p>
+                <legend>Input Password</legend>
+                <p><input type="password" name="password" id= "password" placeholder="Enter your password" required="" maxlength="20" minlength="8"></p>
+                <p><input type="password" name="re-password"  placeholder="Re enter your passwor" required="" maxlength="20" minlength="8"></p>
+                <p><input type="submit" onclick="signInfo()" value="submit"/>  </p>
                 <script src="js/login.js"></script>
-            </form>
-        </div>
+            </fieldset>
+        </form>
+        <form></form>
+
     </div>
 </div>
 
