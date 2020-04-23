@@ -1,25 +1,14 @@
-var objPeople = [
-    { // Object @ 0 index
-        username: "admin",
-        password: "admin"
-    },
-    { // Object @ 1 index
-        username: "matt",
-        password: "academy"
-    },
-    { // Object @ 2 index
-        username: "chris",
-        password: "forever"
-    }
+var usernameinfo = ["admin", "chris"];
 
-]
+var passwordinfo =["admin","forever"]
+
 
 function getInfo() {
     var username = document.getElementById('username').value
     var password = document.getElementById('password').value
-    for(var i = 0; i < objPeople.length; i++) {
+    for(var i = 0; i < usernameinfo.length; i++) {
         // check is user input matches username and password of a current index of the objPeople array
-        if(username == objPeople[i].username && password == objPeople[i].password) {
+        if(username == usernameinfo[i] && password == passwordinfo[i]) {
             console.log(username + " is logged in!!!")
             window.location = 'http://localhost:5000';
             // stop the function if this is found to be true
@@ -32,13 +21,14 @@ function getInfo() {
 
 }
 
-function signUpInfo()
+function signInfo()
 {
     var username = document.getElementById('username').value
     var password = document.getElementById('password').value
-
-    Object.defineProperty(obj, "property3", {value : 'some value',
-        writable : true,
-        enumerable : true,
-        configurable : true});
+    usernameinfo.push(username);
+    passwordinfo.push(password);
+    setTimeout(function(){ alert("successful sign up!"); },100);
+    window.location = 'http://localhost:5000/login.html';
 }
+
+
