@@ -9,6 +9,44 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="public/stylesheets/style.css">
       <script src="js/js.js"></script>
+      <style>
+          * {
+              box-sizing: border-box;
+          }
+          .menu {
+              float:left;
+              width:20%;
+              text-align:center;
+          }
+          .menu a {
+              background-color:#e5e5e5;
+              padding:26px;
+              margin-top:7px;
+              display:block;
+              width:100%;
+              color:black;
+          }
+          .main {
+              float:left;
+              width:60%;
+              padding:0 20px;
+          }
+          .right {
+              background-color:#e5e5e5;
+              float:left;
+              width:20%;
+              padding:100px;
+              margin-top:7px;
+              text-align:center;
+          }
+
+          @media only screen and (max-width:620px) {
+              /* For mobile phones: */
+              .menu, .main, .right {
+                  width:100%;
+              }
+          }
+      </style>
     <title>CUSS</title>
   </head>
   <body>
@@ -23,8 +61,7 @@
       <li class="nav-item">
           <a href = "">Stock Real-time Quote System</a>
           <a href = "SSS.html">Stock-screener system</a>
-          <a href = "DF.html">Discussion Forum</a>
-          <a href = "PM.html">Private Message</a>
+          <a href = "index.html">Discussion Forum</a>
       </li>
 
     </ul>
