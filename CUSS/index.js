@@ -57,9 +57,7 @@ app.post('/', function (req, res) {
 
 
 // create about page route
-app.get('/DF.html', function (req, res) {
-    res.render('DF');
-});
+
 
 app.get('/SSS.html', function (req, res) {
 	res.render('SSS');
