@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/> <!--字元編碼-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--視窗寬度=omn寬度-->
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="Author" content="Camus">
+        <meta name="Keywords" content="測試" />
+        <meta name="Description" content="測試" />
+        <title>網頁標題Study(25/03/2020)</title>
+        <script src="js_main/Date.js"></script>
+    </head>
+
+    <body bgcolor = "#ffdead" text="#8a2be2" link = "green" alink = "red" vlink = "aqua"> <!--link 代表未點擊link colour alink 代表 click 時colour vlink 代表 click 後colour-->
+    <script>alert('alert');     <!--alert 弹出“警告框” -->
+    var a = prompt("请随便输入点什么东西吧");  <!--prompt() 就是专门用来弹出能够让用户输入的对话框-->
+    console.log(a);             <!--console.log("xx") 按F12即可打开控制台，选择「console」栏，即可看到打印的内容 -->
+    </script>
+    <a href = "#"target="_blank"> HiHi </a>    <!--<a>代link href = "#" 暫無超連結 target="_blank"開新窗口-->
+    <p>This is a paragraph</p>  <!--<p>代paragraph-->
+    <p>This is another paragraph</p>    <!--<p> 文本级标签 can only have 文字、图片、表单-->
+    <p>First class paragraph
+        <span>Span 1</span>     <!--<span>文本级标签 can only have 文字、图片、表单。-->
+        <span>
+            <a href="">information</a>     <!--<span>和<div>唯一的区别在于：<span>是不换行的，而<div>是换行的。-->
+            <a href="">buy</a>
+        </span>
+    </p>
+    <div class="header">        <!--div标签负责布局，负责结构，负责分块-->
+        Start
+        <div class="logo"><img src='http://www.google.com.hk/images/srpr/logo3w.png' /> </div>
+        <div class="nav">Nav</div> <!--<div> 把标签中的内容作为一个块儿来对待(division)必须单独占据一行-->
+        END
+    </div>
+    <div class="content">
+        <div class="Name">This <br/> is a para<br/>graph with line breaks</div>  <!--<br> 当你打算结束一行，而又不想开始一个新段落时-->
+        <div class="name">
+            <p>This is a paragraph</p>  <!--<p>标签和<br>标签的区别在于：<p>标签会在段落的前后自动插入一个空行，而<br>标签没有空行-->
+            <p>This is another paragraph</p>
+        </div>
+    </div>
+    <div class="footer">END</div>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <form>
+        <fieldset>
+            <legend>Account information</legend>
+            <p><input type="number" name="sid"  placeholder="Enter your student ID" required="" maxlength="10" minlength="10"></p>
+            <p><input type="text" name="username"  placeholder="Enter your username" required=""></p>
+            <p><input type="number"placeholder="Enter invite Code" required=""/></p>
+            <p><input type="radio" name="sex" /> 男</p>
+            <p><input type="radio" name="sex" /> 女</p>
+            <p><input type="submit" value="Check username available"/></p>
+        </fieldset>
+    </form>
+    <form></form>
+
+    <form>
+        <fieldset>
+            <legend>Input Password</legend>
+            <p><input type="password" name="password"  placeholder="Enter your password" required="" maxlength="20" minlength="8"></p>
+            <p><input type="password" name="re-password"  placeholder="Re enter your passwor" required="" maxlength="20" minlength="8"></p>
+            <p><input type="submit" value="submit"/></p>
+        </fieldset>
+    </form>
+
+    </body>
+</html>
