@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/stylesheets/style.css">
+    <script src="js/js.js"></script>
+    <title>CUSS</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">CUSS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a href = "">Stock Real-time Quote System</a>
+                <a href = "SSS.html">Stock-screener system</a>
+                <a href = "DF.html">Discussion Forum</a>
+                <a href = "PM.html">Private Message</a>
+            </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="/" method="POST">
+            <input class="form-control mr-sm-2" type="search" placeholder="Lookup Stock Quote" aria-label="Search" name="stock_ticker">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Lookup</button>
+        </form>
+    </div>
+</nav>
+<br/>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://tw.tradingview.com/screener/" rel="noopener" target="_blank"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+        {
+            "width": 1100,
+            "height": 512,
+            "defaultColumn": "overview",
+            "defaultScreen": "most_capitalized",
+            "market": "america",
+            "showToolbar": true,
+            "colorTheme": "light",
+            "locale": "zh_TW"
+        }
+    </script>
+</div>
+<!-- TradingView Widget END -->
