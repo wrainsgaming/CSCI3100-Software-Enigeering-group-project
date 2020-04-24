@@ -1,6 +1,6 @@
-var usernameinfo = ["admin", "chris"];
+var usernameinfo = ["admin", "chris", "Test1","CSCI3100"];
 
-var passwordinfo =[ "admin","forever"]
+var passwordinfo =[ "admin","forever","Test1","CSCI3100"]
 
 
 function getInfo() {
